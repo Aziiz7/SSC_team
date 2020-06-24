@@ -41,7 +41,7 @@ class MessageController extends Controller
     ///////////////Get message in the DashBoard//////////////
         public function getMessages(){
 
-            $messages = Message::where('reciver','=',Auth::user()->name)->get();
+        $messages = Message::where('reciver','=',Auth::user()->email)->get();
        
             return view('dashboard')->with('messages',$messages );}
         
