@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendEmail;
 
 class PagesController extends Controller
 {
@@ -23,5 +25,32 @@ class PagesController extends Controller
     }
     public function getRegistration(){
         return view('registration');
+    }
+    public function getStudent(){
+        return view('Students');
+    }
+
+
+    public function getSendEmail(){
+        return view('SendEmail');
+    }
+
+    public function SendEmail(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'subject' => 'required',
+            'body' => 'required|min:10'
+        ]);
+
+        $name = $request->input('name');
+        $email = $request->input('email');
+        $subject = $request->input('subject');
+        $body = $request->input('body');
+        
+        Mail::to('mohammed-jumah@outlook.com')
+            ->send(new SendEmail($name, $email, $subject, $body));
+
+        return redirect('/SendEmail')->with('success', 'We got your email and Will answer Soon..!');
     }
 }

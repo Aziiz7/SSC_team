@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/about','PagesController@getAbout');
 Route::get('/dashboard','PagesController@getDashboard');
 Route::get('/newrequest','PagesController@getNewrequest');
-Route::get('/dashboard','MessageController@getMessages');
+Route::get('/dashboard','MessageController@getMessages')->name('HOME');
 Route::post('/newrequest/submit','MessageController@submit');
 Route::post('/newuser/submit','UserController@submit');
 Route::get('/','PagesController@getlogin');
@@ -25,8 +25,18 @@ Route::post('/checklogin', 'MainController@checklogin');
 Route::get('/logout', 'MainController@logout');
 Route::get('/dashboard/{id}','MessageController@deleteMessages')->name('dltmsg');
 Route::get('/dashboard/show/{id}','MessageController@showmessage')->name('showmsg');
-Route::get('/registration', 'PagesController@getRegistration');
 
 
 
+Route::get('/students','PagesController@getStudent');
+Route::get('/student/show/{id}','StudentController@getStudent');
+Route::get('/students','StudentController@getStudent');
+
+
+
+Route::post('/registration', 'RegistrationController@store');
+Route::get('/registration', 'RegistrationController@create');
+
+Route::get('/SendEmail', 'PagesController@getSendEmail');
+Route::post('/SendEmail', 'PagesController@SendEmail');
 

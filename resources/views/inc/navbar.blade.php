@@ -11,9 +11,19 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+            @if((Auth::user()->name == 'SEU'))
+         <li><a href="/students">Students</a></li>
+         <li><a href="/">Dashboard</a></li>
+         <li><a href="/about">About</a></li>
+         <li><a href="/newrequest">New Message</a></li>
+         <li><a href="/SendEmail">Send Email</a></li>
+           @else
             <li><a href="/">Dashboard</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/newrequest">New Message</a></li>
+            <li><a href="/SendEmail">Send Email</a></li>
+            @endif
+
           </ul>
         </div>
       </div>

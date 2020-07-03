@@ -15,6 +15,10 @@ class UserTableSeeder extends Seeder
 
             'name' =>'Abdulaziz',
             'email'=>'abulazizalhoimel@gmail.com',
+            'Univarsity'=>'KSU',
+            'univarsityemail'=>'seu@seu.edu.sa',
+            'grade'=>'4.22',
+            'semster'=>'third',
             'password' => Hash::make('Admin'),
             'remember_token' =>str_random(12),
          ] );
@@ -22,6 +26,10 @@ class UserTableSeeder extends Seeder
 
             'name' =>'SEU',
             'email'=>'seu@seu.edu',
+            'Univarsity'=>'KSU',
+            'univarsityemail'=>'seu@seu.edu.sa',
+            'grade'=>'4.22',
+            'semster'=>'third',
             'password' => Hash::make('Admin'),
             'remember_token' =>str_random(11),
          ] );
@@ -31,6 +39,10 @@ class UserTableSeeder extends Seeder
 
             'name' =>'Harvard',
             'email'=>'harvard@harvard.edu',
+            'Univarsity'=>'KSU',
+            'univarsityemail'=>'seu@seu.edu.sa',
+            'grade'=>'4.22',
+            'semster'=>'third',
             'password' => Hash::make('Admin'),
             'remember_token' =>str_random(10),
          ] );

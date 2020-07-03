@@ -19,12 +19,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <!--headerIncludes-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <link rel="stylesheet" href="/css/app.css">
-  <link rel="stylesheet" href="/css/cutom.css">
+
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- css files -->
+  <link rel="stylesheet" href="/bundles/css/style.css" type="text/css" media="all"> <!-- Style-CSS -->
+  <link href="/bundles/css/style.css"rel="stylesheet" type="text/css" media="all">
+  <!-- //css files -->
+  
+  <!-- google fonts -->
+  <link href="//fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
+  <!-- //google fonts -->
+  
   
 </head>
 <body>
-
+    <div id="page" class="page">
     @include('inc.navbar')
 <div class="container">
 
@@ -47,18 +60,33 @@
 <script type="text/javascript">
 
 
-
-  // Show function
+  
+  // Show  message function
   $(document).on('click', '.show-modal', function() {
-  $('#show').modal('show');
+  $('#showmsg').modal('show');
   $('#i').text($(this).data('id'));
   $('#ti').text($(this).data('title'));
-  $('#by').text($(this).data('message'));
+  $('#by').text($(this).data('email'));
   $('.modal-title').text($(this).data('title'));
+ 
+  });
+
+  
+  // Show users function
+  $(document).on('click', '.show-modal', function() {
+  $('#showstd').modal('show');
+  $('#i').text($(this).data('id'));
+  $('#ti').text($(this).data('Univarsity'));
+  $('#by0').text($(this).data('email'));
+  $('#by2').text($(this).data('grade'));
+  $('#by3').text($(this).data('semster'));
+  $('#b1').text($(this).data('univarsityemail'));
+  $('.modal-title').text($(this).data('id'));
  
   });
   
 </script>
 </footer>
+    </div>
 </body>
 </html>

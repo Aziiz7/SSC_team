@@ -16,7 +16,7 @@ class CreateRequestsTable extends Migration
         Schema::create('Messages', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('email');
+            $table->string('reciver');
             $table->string('title');
             $table->mediumText('message');
             $table->timestamps();
