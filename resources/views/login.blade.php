@@ -2,7 +2,7 @@
 <html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Title here</title>
+	<title>Log In</title>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -40,17 +40,14 @@
 				</div>
 				<div class="links">
 					<ul class="links-unordered-list">
-						<li class="">
-							<a href="#" class="editContent" style="outline: none; cursor: inherit;">Login</a>
-						</li>
-						<li class="">
-							<a href="#" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
-						</li>
-						<li class="">
+					<li class="">
 							<a href="/register" class="editContent" style="outline: none; cursor: inherit;">Register</a>
 						</li>
 						<li class="">
-							<a href="#" class="editContent" style="outline: none; cursor: inherit;">Contact</a>
+							<a href="/about" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
+						</li>
+						<li class="">
+							<a href="/SendEmail" class="editContent" style="outline: none; cursor: inherit;">Contact Us</a>
 						</li>
 					</ul>
 				</div>

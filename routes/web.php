@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
+
 
 Route::get('/about','PagesController@getAbout');
 Route::get('/dashboard','PagesController@getDashboard');
@@ -34,9 +36,12 @@ Route::get('/students','StudentController@getStudent');
 
 
 
-Route::post('/registration', 'RegistrationController@store');
-Route::get('/registration', 'RegistrationController@create');
+Route::post('/register', 'RegistrationController@store');
+Route::get('/register', 'RegistrationController@create');
 
 Route::get('/SendEmail', 'PagesController@getSendEmail');
 Route::post('/SendEmail', 'PagesController@SendEmail');
 
+Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
+     Route::resource('/users', 'UsersController', ['except' => ['show', 'create', 'store']]);
+});

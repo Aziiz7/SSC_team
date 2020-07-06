@@ -23,7 +23,7 @@
    @if(isset(Auth::user()->email))
     <div class="alert alert-danger success-block">
      <strong>Welcome {{ Auth::user()->email }}</strong>
-     <br />
+     <br/>
      <a href="{{ url('/') }}">Logout</a>
     </div>
    @else

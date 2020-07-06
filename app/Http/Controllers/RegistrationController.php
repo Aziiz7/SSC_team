@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\User;
+use App\Role;
 
 class RegistrationController extends Controller
 {
@@ -21,13 +22,13 @@ class RegistrationController extends Controller
             'password' => 'required|min:6|confirmed|string',
             'Univarsity' => 'required|max:255|string',
             'univarsityemail' => 'required|email|unique:users|string',
-            'grade' => 'required|max:6|string',
+            'grade' => 'required|max:6|numeric',
             'semster' => 'required|max:10|string',
             'api_token' =>Str::random(60),
         ]);
         
-        $user = User::create(request(['name', 'email','Univarsity', 'univarsityemail', 'grade','semster', 'api_token']));
-        
+        $user = User::create(request(['name', 'email','password','Univarsity', 'univarsityemail', 'grade','semster', 'api_token']));
+
         auth()->login($user);
         
         return redirect()->to('/dashboard')->withSuccess('Great! You have Successfully Registration');

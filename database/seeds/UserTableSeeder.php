@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
+use App\Role;
+
 class UserTableSeeder extends Seeder
 {
     /**
@@ -11,18 +13,15 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
+       User::truncate();
+       DB::table('role_user')->truncate();
 
-            'name' =>'Abdulaziz',
-            'email'=>'abulazizalhoimel@gmail.com',
-            'Univarsity'=>'KSU',
-            'univarsityemail'=>'seu@seu.edu.sa',
-            'grade'=>'4.22',
-            'semster'=>'third',
-            'password' => Hash::make('Admin'),
-            'remember_token' =>str_random(12),
-         ] );
-         User::create([
+       $adminRole = Role::where('name', 'admin')->first();
+       $advisorRole = Role::where('name', 'advisor')->first();
+       $studentRole = Role::where('name', 'student')->first();
+
+        
+          $admin = User::create([
 
             'name' =>'SEU',
             'email'=>'seu@seu.edu',
@@ -30,12 +29,12 @@ class UserTableSeeder extends Seeder
             'univarsityemail'=>'seu@seu.edu.sa',
             'grade'=>'4.22',
             'semster'=>'third',
-            'password' => Hash::make('Admin'),
+            'password' => 'Admin',
             'remember_token' =>str_random(11),
          ] );
 
 
-         User::create([
+          $advisor = User::create([
 
             'name' =>'Harvard',
             'email'=>'harvard@harvard.edu',
@@ -43,8 +42,24 @@ class UserTableSeeder extends Seeder
             'univarsityemail'=>'seu@seu.edu.sa',
             'grade'=>'4.22',
             'semster'=>'third',
-            'password' => Hash::make('Admin'),
+            'password' => 'Admin',
             'remember_token' =>str_random(10),
          ] );
+
+          $student = User::create([
+
+            'name' =>'Abdulaziz',
+            'email'=>'abulazizalhoimel@gmail.com',
+            'Univarsity'=>'KSU',
+            'univarsityemail'=>'seu@seu.edu.sa',
+            'grade'=>'4.22',
+            'semster'=>'third',
+            'password' => 'Admin',
+            'remember_token' =>str_random(12),
+         ] );
+
+       $admin->roles()->attach($adminRole);
+       $advisor->roles()->attach($advisorRole);
+       $student->roles()->attach($studentRole);
     }
 }
