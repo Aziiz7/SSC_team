@@ -11,24 +11,26 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            @if((Auth::user()->name == 'SEU'))
+          @if (Auth::user())
+          @can('manage-users')
          <li><a href="/students">Students</a></li>
          <li><a href="/">Dashboard</a></li>
          <li><a href="/SendEmail">Send Email</a></li>
           <li><a href="/about">About</a></li>
          <li><a href="/newrequest">New Message</a></li>
-         @can('manage-users')
-         <li><a href="{{ route('admin.users.index') }}">User Management</a></li>
-         @endcan
-           @else
+         <li><a href="{{ route('admin.users.index') }}">Users Management</a></li>
+          @endcan
+          @cannot('manage-users')
             <li><a href="/">Dashboard</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/newrequest">New Message</a></li>
             <li><a href="/SendEmail">Send Email</a></li>
-            @can('manage-users')
-            <li><a href="{{ route('admin.users.index') }}">User Management</a></li>
-            @endcan
-            @endif
+          @endcannot
+          @else
+          @guest
+          <li><a href="/about">About</a></li>
+          @endguest
+          @endif
           </ul>
         </div>
       </div>

@@ -15,7 +15,7 @@
 <div class="form-group">
     {{Form::label('Email')}}
 
-    {{Form::text('email', '',['class'=>'form-control','placeholder'=>'Enter your email'])}}
+    {{Form::text('email', '',['class'=>'form-control','placeholder'=>'example@example.com'])}}
 </div>
 
 <div class="form-group">
@@ -25,9 +25,9 @@
 </div>
 
 <div class="form-group">
-    {{Form::label('Body')}}
+    {{Form::label('Message')}}
 
-    {{Form::text('body', '',['class'=>'form-control ','placeholder'=>'Enter your message '])}}
+    {{Form::textarea('body', '',['class'=>'form-control ','placeholder'=>'Enter your message '])}}
 </div>
 
 <div>

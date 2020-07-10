@@ -42,6 +42,9 @@ Route::get('/register', 'RegistrationController@create');
 Route::get('/SendEmail', 'PagesController@getSendEmail');
 Route::post('/SendEmail', 'PagesController@SendEmail');
 
+Route::get('/SendEmailForGuest', 'PagesController@getSendEmailForGuest');
+Route::post('/SendEmailForGuest', 'EmailController@SendEmail');
+
 Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
      Route::resource('/users', 'UsersController', ['except' => ['show', 'create', 'store']]);
 });

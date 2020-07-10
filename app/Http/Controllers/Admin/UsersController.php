@@ -58,6 +58,10 @@ class UsersController extends Controller
 
         $user->name = $request->name;
         $user->email = $request->email;
+        $user->Univarsity = $request->Univarsity;
+        $user->univarsityemail = $request->univarsityemail;
+        $user->grade = $request->grade;
+        $user->semster = $request->semster;
         
         if($user->save()){
             $request->session()->flash('success', $user->name. ' has been ubdated');

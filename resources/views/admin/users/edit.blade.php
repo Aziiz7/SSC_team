@@ -29,9 +29,61 @@
                             <label for="name" class="col-md-2 col-form-label text-md-right">Name</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ $user->name }}" required autofocus>
+                                <input id="name" type="text1" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ $user->name }}" required autofocus>
 
                                 @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Univarsity" class="col-md-2 col-form-label text-md-right">Univarsity</label>
+
+                            <div class="col-md-6">
+                                <input id="Univarsity" type="text1" class="form-control @error('Univarsity') is-invalid @enderror" name="Univarsity" value="{{ $user->Univarsity }}" required autofocus>
+
+                                @error('Univarsity')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="univarsityemail" class="col-md-2 col-form-label text-md-right">Univarsity Email</label>
+
+                            <div class="col-md-6">
+                                <input id="univarsityemail" type="email" class="form-control @error('univarsityemail') is-invalid @enderror" name="univarsityemail" value="{{ $user->univarsityemail }}" required autofocus>
+
+                                @error('univarsityemail')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="grade" class="col-md-2 col-form-label text-md-right">Grade</label>
+
+                            <div class="col-md-6">
+                                <input id="grade" type="numeric" class="form-control @error('grade') is-invalid @enderror" name="grade" value="{{ $user->grade }}" required autofocus>
+
+                                @error('grade')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="semster" class="col-md-2 col-form-label text-md-right">Semster</label>
+
+                            <div class="col-md-6">
+                                <input id="semster" type="text1" class="form-control @error('semster') is-invalid @enderror" name="semster" value="{{ $user->semster }}" required autofocus>
+
+                                @error('semster')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

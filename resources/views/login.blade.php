@@ -47,7 +47,7 @@
 							<a href="/about" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
 						</li>
 						<li class="">
-							<a href="/SendEmail" class="editContent" style="outline: none; cursor: inherit;">Contact Us</a>
+							<a href="/SendEmailForGuest" class="editContent" style="outline: none; cursor: inherit;">Contact Us</a>
 						</li>
 					</ul>
 				</div>

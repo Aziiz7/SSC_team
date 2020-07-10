@@ -24,5 +24,5 @@ class EmailController extends Controller
         Mail::to('mohammed-jumah@outlook.com')
             ->send(new SendEmail($name, $email, $subject, $body));
 
-        return redirect('/SendEmail')->with('success', 'We got your email and Will answer Soon..!');
+        return redirect('/SendEmailForGuest')->with('success', 'We got your email and Will answer Soon..!');
     }  }

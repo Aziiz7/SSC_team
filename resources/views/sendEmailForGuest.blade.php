@@ -1,7 +1,7 @@
 <html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Registration</title>
+	<title>Contact Us</title>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -40,7 +40,7 @@
 				<div class="links">
 					<ul class="links-unordered-list">
 						<li class="">
-							<a href="/" class="editContent" style="outline: none; cursor: inherit;">Login</a>
+                        <a href="/register" class="editContent" style="outline: none; cursor: inherit;">Register</a>
 						</li>
 						<li class="">
 							<a href="/about" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
@@ -55,10 +55,11 @@
 				<div class="text-center icon">
 					<span class="fa fa-html5" style="outline: none; cursor: inherit;"></span>
 				</div>
-				<div class="content-bottom">
+				<!-- <div class="content-bottom"> -->
+                <div class="container-lg mt-3 border">
+                 <h1>Contact US</h1>
 
-
-				 <form method="post" action="{{ url('/register') }}">
+				 <form method="post" action="{{ url('/SendEmailForGuest') }}">
     {{ csrf_field() }}
     @if(isset(Auth::user()->email))
     <script>window.location="/dashboard";</script>
@@ -98,7 +99,7 @@
 								<span class="fa fa-user" aria-hidden="true" style="outline: none; cursor: inherit;"></span>
 							</div>
 							<div class="wthree-field">
-								<input name="email" id="email" type="email" value="" placeholder="Your Email" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" />
+								<input name="email" id="email" type="email" value="" placeholder="example@example.com" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" />
 							</div>
 						     @error('email')
                              <span class="invalid-feedback" role="alert">
@@ -111,9 +112,9 @@
 								<span class="fa fa-user" aria-hidden="true" style="outline: none; cursor: inherit;"></span>
 							</div>
 							<div class="wthree-field">
-								<input name="password" id="password" type="password" value="" placeholder="Your password" @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" />
+								<input name="subject" id="text1" type="subject" value="" placeholder="Your Subject" @error('subject') is-invalid @enderror" name="subject" required autocomplete="subject" />
 							</div>
-						     @error('password')
+						     @error('subject')
                              <span class="invalid-feedback" role="alert">
                              <strong>{{ $message }}</strong>
                              </span>
@@ -123,10 +124,10 @@
 							<div class="icon-field">
 								<span class="fa fa-user" aria-hidden="true" style="outline: none; cursor: inherit;"></span>
 							</div>
-						<div class="wthree-field">
-								<input name="password_confirmation" id="password" type="password" value="" placeholder="Confirm Password" required autocomplete="new-password" />
+							<div class="wthree-field">
+								<input name="body" id="body" type="body" value="" placeholder="Your Message" @error('body') is-invalid @enderror" name="body" required autocomplete="body"/>
 							</div>
-						     @error('password')
+						     @error('body')
                              <span class="invalid-feedback" role="alert">
                              <strong>{{ $message }}</strong>
                              </span>
@@ -186,7 +187,7 @@
 					    </div> -->
 
 						<div class="wthree-field">
-							<button type="submit" name="signup" class="btn" style="outline: none; cursor: inherit;">Sign Up</button>
+							<button type="submit" name="sendemail" class="btn" style="outline: none; cursor: inherit;">Send</button>
 						</div>
 
 						<ul class="list-login-bottom">

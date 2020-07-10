@@ -12,7 +12,7 @@ class StudentController extends Controller
 
         $users = User::where('id', '!=', auth()->id())->get();
        
-        return view('/students')->with('users',$users );}
+        return view('/students')->with('users', $users);}
         
 
 }

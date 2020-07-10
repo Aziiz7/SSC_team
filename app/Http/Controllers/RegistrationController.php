@@ -20,10 +20,10 @@ class RegistrationController extends Controller
             'name' => 'required|max:255|string',
             'email' => 'required|email|unique:users|string',
             'password' => 'required|min:6|confirmed|string',
-            'Univarsity' => 'required|max:255|string',
-            'univarsityemail' => 'required|email|unique:users|string',
-            'grade' => 'required|max:6|numeric',
-            'semster' => 'required|max:10|string',
+            'Univarsity' => 'max:255|string',
+            'univarsityemail' => 'email|unique:users|string',
+            'grade' => 'max:6|numeric',
+            'semster' => 'max:10|string',
             'api_token' =>Str::random(60),
         ]);
         

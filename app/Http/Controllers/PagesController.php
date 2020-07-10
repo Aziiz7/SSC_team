@@ -23,14 +23,14 @@ class PagesController extends Controller
     public function getlogin(){
         return view('login');
     }
-    /* public function getRegistration(){
-        return view('registration');
-    } */
     public function getStudent(){
         return view('Students');
     }
     public function getSendEmail(){
         return view('SendEmail');
+    }
+    public function getSendEmailForGuest(){
+        return view('SendEmailForGuest');
     }
 
     public function SendEmail(Request $request){
@@ -49,6 +49,6 @@ class PagesController extends Controller
         Mail::to('mohammed-jumah@outlook.com')
             ->send(new SendEmail($name, $email, $subject, $body));
 
-        return redirect('/SendEmail')->with('success', 'We got your email and Will answer Soon..!');
+        return redirect('/SendEmail')->with('success', 'We got your email and will answer Soon..!');
     }
 }
