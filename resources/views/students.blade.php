@@ -99,7 +99,7 @@
     @parent
    
       <div class="sidebar">
-      <img src="https://image.flaticon.com/icons/svg/78/78948.svg" width="300" height="175">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYtk-bZ8BVQ3jOB7M4TrGDl_BMidFWB1wlXqf9CoFhiV68_mfE&s" width="300" height="175">
       </div>
     @endsection
 

@@ -36,7 +36,8 @@
 			
 			<div class="bottom-grid">
 				<div class="logo">
-					<h1> <a href="index.html" class="editContent" style="outline: none; cursor: inherit;"><img src="\bundles\images\logo.png" alt="SSC" height="19%" ><span class="fa fa-key" style="outline: none; cursor: inherit;"></span> </a></h1>
+					<h1> <img src="https://i.imgur.com/ZdNbYS7.png" width="120" height="80">
+					<a href="index.html" class="editContent" style="outline: none; cursor: inherit;"><img src="\bundles\images\logo.png" alt="SSC" height="19%" ><span class="fa fa-key" style="outline: none; cursor: inherit;"></span> </a></h1>
 				</div>
 				<div class="links">
 					<ul class="links-unordered-list">
@@ -122,11 +123,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="copyright">
-					<p>© 2019 Key. All rights reserved | Design by
-						<a href="http://w3layouts.com">W3layouts</a>
-					</p>
-				</div>
+				
 			</div>
 		</div>
 	</section></div>

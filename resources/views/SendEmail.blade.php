@@ -39,5 +39,6 @@
 @endsection
 @section('sidebar')
     @parent
+    <img src="https://www.freepngimg.com/thumb/telephone/68708-ipma-message-icon-email-telephone-png-image-high-quality.png" width="300" height="200">
   
     @endsection
