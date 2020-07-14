@@ -36,8 +36,7 @@
 			
 			<div class="bottom-grid">
 				<div class="logo">
-					<h1> <img src="https://i.imgur.com/ZdNbYS7.png" width="120" height="80">
-					<a href="index.html" class="editContent" style="outline: none; cursor: inherit;"><img src="\bundles\images\logo.png" alt="SSC" height="19%" ><span class="fa fa-key" style="outline: none; cursor: inherit;"></span> </a></h1>
+					<h1> <a href="index.html" class="editContent" style="outline: none; cursor: inherit;"><img src="\bundles\images\logo.png" alt="SSC" height="19%" ><span class="fa fa-key" style="outline: none; cursor: inherit;"></span> </a></h1>
 				</div>
 				<div class="links">
 					<ul class="links-unordered-list">
@@ -45,7 +44,7 @@
 							<a href="/register" class="editContent" style="outline: none; cursor: inherit;">Register</a>
 						</li>
 						<li class="">
-							<a href="/about" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
+							<a href="{{ route('about') }}" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
 						</li>
 						<li class="">
 							<a href="/SendEmailForGuest" class="editContent" style="outline: none; cursor: inherit;">Contact Us</a>
@@ -63,7 +62,7 @@
 				 <form method="post" action="{{ url('/checklogin') }}">
     {{ csrf_field() }}
     @if(isset(Auth::user()->email))
-    <script>window.location="/dashboard";</script>
+    <script>window.location="/home";</script>
    @endif
 
    @if ($message = Session::get('error'))
@@ -113,7 +112,7 @@
 				<div class="links">
 					<ul class="links-unordered-list">
 						<li class="">
-							<a href="#" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
+							<a href="{{ route('about') }}" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
 						</li>
 						<li class="">
 							<a href="#" class="editContent" style="outline: none; cursor: inherit;">Privacy Policy</a>
@@ -123,7 +122,11 @@
 						</li>
 					</ul>
 				</div>
-				
+				<div class="copyright">
+					<p>© 2019 Key. All rights reserved | Design by
+						<a href="http://w3layouts.com">W3layouts</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</section></div>

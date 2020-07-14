@@ -9,13 +9,13 @@ use App\Mail\SendEmail;
 class PagesController extends Controller
 {
     public function getAbout(){
-        return view('about');
+        return view('NewTemplate.AboutPage');
     }
     public function getNewrequest(){
-        return view('newrequest');
+        return view('NewTemplate.NewRequest');
     }
     public function getDashboard(){
-        return view('dashboard');
+        return view('NewTemplate.DashboardPage');
     }
     public function getWelcome(){
         return view('welcome');
@@ -24,10 +24,10 @@ class PagesController extends Controller
         return view('login');
     }
     public function getStudent(){
-        return view('Students');
+        return view('NewTemplate.StudentsPage');
     }
     public function getSendEmail(){
-        return view('SendEmail');
+        return view('NewTemplate.contactusPage');
     }
     public function getSendEmailForGuest(){
         return view('SendEmailForGuest');

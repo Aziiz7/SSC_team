@@ -1,32 +1,22 @@
+@extends('layouts.appnew')
 
-@extends('layouts.app')
-@section('content')
-
-
-<div class="jumbotron text-left">
-
-
-  <div class="container ">
-
-        <h1> Recived messages  </h1>
-       
-         
-      
-          <div class="row">
-            <div class="col">
-              <table class="table table-bordered table-align">
-                <thead>
-                  <tr >
-            <th >Sender</th>
-            <th>title</th>
-            <th>Action</th>
-     
-            
-          </tr>
-        </thead>
-        <tbody>
+     @section('content')
+	 {{ csrf_field() }}
+    
+     <div class="container">
+     <h1><span class="blue"> Recived messages </span></h1> 
+        </br>  </br>         
+       <table class="table table-bordered">
+     <thead>
+      <tr>
+        <th>Sender</th>
+        <th>Title</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
           @if(count($messages ) > 0)
-        @foreach($messages  as $message)
+          @foreach($messages  as $message)
        
            <td>{{$message->name}}</td>
           <td >{{$message->title}}</td>
@@ -59,16 +49,8 @@
   @endif
  
 </tbody>
- 
 </table>
-</div>
-
-</div>
-
-
-</div>
-
-</div>
+</div></div> 
 
 <div id="showmsg" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -87,15 +69,5 @@
                     </div>
                   </div>
                   </div>
-@endsection
-   
-    @section('sidebar')
-    @parent
-    <h3>This page contains all the messages recived.<br>
-      Admin can read or delete.<h3>
-      <div class="sidebar">
-      <img src="https://image.flaticon.com/icons/svg/78/78948.svg" width="300" height="175">
-      </div>
-    @endsection
 
-    
+    @endsection

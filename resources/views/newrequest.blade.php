@@ -43,6 +43,8 @@
 
 @section('sidebar')
 @parent
+<h3>This page contains all the messages recived.<br>
+  Admin can read or delete.<h3>
   <div class="sidebar">
-  <img src="https://www.freepngimg.com/thumb/telephone/68708-ipma-message-icon-email-telephone-png-image-high-quality.png" width="300" height="200">
+    <img src="https://image.flaticon.com/icons/svg/78/78948.svg" width="300" height="175">
   </div>@endsection

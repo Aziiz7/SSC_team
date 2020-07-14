@@ -33,7 +33,7 @@ class MessageController extends Controller
         
         ///// Redirect
         
-        return redirect('/dashboard')->with('success','Message has benn sent ');
+        return redirect('/dashboard')->with('success','Message has beEn sent ');
         }
     
 
@@ -43,7 +43,7 @@ class MessageController extends Controller
 
         $messages = Message::where('reciver','=',Auth::user()->email)->get();
        
-            return view('dashboard')->with('messages',$messages );}
+            return view('/NewTemplate.DashboardPage')->with('messages',$messages );}
         
 
 

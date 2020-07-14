@@ -22,7 +22,7 @@ class UsersController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('admin.users.index')->with('users', $users);
+        return view('NewTemplate.AdminUsersIndex')->with('users', $users);
     }
 
     /**
@@ -39,7 +39,7 @@ class UsersController extends Controller
 
         $roles = Role::all();
 
-        return view('admin.users.edit')->with([
+        return view('NewTemplate.AdminUsersEdit')->with([
             'user' => $user,
             'roles' => $roles
         ]);
