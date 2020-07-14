@@ -15,8 +15,9 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 
-Route::get('/about','PagesController@getAbout');
-Route::get('/dashboard','PagesController@getDashboard');
+Route::get('/home','HomeController@index')->name('home');
+Route::get('/about','PagesController@getAbout')->name('about');
+//Route::get('/dashboard','PagesController@getDashboard');
 Route::get('/newrequest','PagesController@getNewrequest');
 Route::get('/dashboard','MessageController@getMessages')->name('HOME');
 Route::post('/newrequest/submit','MessageController@submit');
@@ -39,8 +40,8 @@ Route::get('/students','StudentController@getStudent');
 Route::post('/register', 'RegistrationController@store');
 Route::get('/register', 'RegistrationController@create');
 
-Route::get('/SendEmail', 'PagesController@getSendEmail');
-Route::post('/SendEmail', 'PagesController@SendEmail');
+Route::get('/SendEmail', 'PagesController@getSendEmail')->name('contact_us');
+Route::post('/SendEmail', 'PagesController@SendEmail')->name('contact_us');
 
 Route::get('/SendEmailForGuest', 'PagesController@getSendEmailForGuest');
 Route::post('/SendEmailForGuest', 'EmailController@SendEmail');

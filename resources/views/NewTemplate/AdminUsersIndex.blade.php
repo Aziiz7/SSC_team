@@ -1,13 +1,11 @@
-@extends('layouts.app')
-@section('content')
+@extends('layouts.appnew')
+
+    @section('content')
 
 
-<div class="jumbotron text-left">
+        <div class="container" text="center">
 
-
-    <div class="container ">
-
-         <h1> Users  </h1>
+         <h1><span class="blue"> Users </span></h1></br></br>
           <div class="row">
              <div class="col">
              <table class="table table-bordered table-align">
@@ -22,25 +20,24 @@
               </tr>
              </thead>
              <tbody>
-             @foreach($users as $user)
+               @foreach($users as $user)
                 <tr>
                     <th scope="row">{{ $user->id }}</th>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
                     <!-- <td>{{ implode(',', $user->roles()->get()->pluck('name')->toArray()) }}</td> -->
                     <td>
-                    <label class="badge badge-success">{{ implode(',', $user->roles()->get()->pluck('name')->toArray()) }}</label>
+                    <span class="label label-warning">{{ implode(' & ', $user->roles()->get()->pluck('name')->toArray()) }}</span>
                     </td>
                     <td>
                       @can('manage-users')
-                    <!--<a href="{{ route('admin.users.update', $user->id) }}"><button class="btn btn-primary btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Add"><i class="fa fa-table float-left"></i></button></a>-->
-                    <a href="{{ route('admin.users.edit', $user->id) }}"><button class=" btn btn-primary btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Edit" style="float: left"><i class="fa fa-edit "></i></button></a>
+                    <a href="{{ route('admin.users.edit', $user->id) }}"><button class=" btn btn-primary btn-md rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Edit" style="float: left"><i class="fa fa-edit "></i></button></a>
                       @endcan
                       @can('delete-users')
                     <form action="{{ route('admin.users.destroy', $user) }}" method="POST" style="float: left">
                        @csrf
                        {{ method_field('DELETE') }}
-                       <button class="btn btn-danger btn-sm rounded-0 " type="submit" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash "></i></button></a>
+                       <button class="btn btn-danger btn-md rounded-0 " type="submit" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-close "></i></button></a>
                     </form>
                       @endcan
                     </td>   
@@ -50,14 +47,6 @@
             </table>
             </div>
           </div>
-     </div>
- </div>
-@endsection
-   
-    @section('sidebar')
-    @parent
-   
-      <div class="sidebar">
-      <img src="https://image.flaticon.com/icons/svg/78/78948.svg" width="300" height="175">
-      </div>
-    @endsection
+        </div>
+
+	@endsection

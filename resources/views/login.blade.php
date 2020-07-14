@@ -44,7 +44,7 @@
 							<a href="/register" class="editContent" style="outline: none; cursor: inherit;">Register</a>
 						</li>
 						<li class="">
-							<a href="/about" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
+							<a href="{{ route('about') }}" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
 						</li>
 						<li class="">
 							<a href="/SendEmailForGuest" class="editContent" style="outline: none; cursor: inherit;">Contact Us</a>
@@ -62,7 +62,7 @@
 				 <form method="post" action="{{ url('/checklogin') }}">
     {{ csrf_field() }}
     @if(isset(Auth::user()->email))
-    <script>window.location="/dashboard";</script>
+    <script>window.location="/home";</script>
    @endif
 
    @if ($message = Session::get('error'))
@@ -112,7 +112,7 @@
 				<div class="links">
 					<ul class="links-unordered-list">
 						<li class="">
-							<a href="#" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
+							<a href="{{ route('about') }}" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
 						</li>
 						<li class="">
 							<a href="#" class="editContent" style="outline: none; cursor: inherit;">Privacy Policy</a>
