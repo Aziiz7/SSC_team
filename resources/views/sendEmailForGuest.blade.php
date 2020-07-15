@@ -42,9 +42,7 @@
 						<li class="">
                         <a href="/register" class="editContent" style="outline: none; cursor: inherit;">Register</a>
 						</li>
-						<li class="">
-							<a href="/about" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
-						</li>
+
 						<li class="">
 							<a href="/SendEmailForGuest" class="editContent" style="outline: none; cursor: inherit;">Contact Us</a>
 						</li>
@@ -81,6 +79,12 @@
      </ul>
     </div>
    @endif
+
+   <div class="container" >
+	<div class ="col-mid-5 col-lg-5 " >
+		@include('inc.errmessages')
+		  </div>
+	</div>
 						<div class="field-group editContent">
 							<div class="icon-field">
 								<span class="fa fa-user" aria-hidden="true" style="outline: none; cursor: inherit;"></span>
@@ -148,9 +152,7 @@
 			<div class="bottom-grid1">
 				<div class="links">
 					<ul class="links-unordered-list">
-						<li class="">
-							<a href="#" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
-						</li>
+					
 						<li class="">
 							<a href="#" class="editContent" style="outline: none; cursor: inherit;">Privacy Policy</a>
 						</li>
@@ -160,8 +162,8 @@
 					</ul>
 				</div>
 				<div class="copyright">
-					<p>© 2019 Key. All rights reserved | Design by
-						<a href="http://w3layouts.com">W3layouts</a>
+					<p>© 2020 Key. All rights reserved | Design by
+						<a >SEU Team</a>
 					</p>
 				</div>
 			</div>

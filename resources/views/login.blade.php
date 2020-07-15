@@ -43,9 +43,7 @@
 					<li class="">
 							<a href="/register" class="editContent" style="outline: none; cursor: inherit;">Register</a>
 						</li>
-						<li class="">
-							<a href="{{ route('about') }}" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
-						</li>
+					
 						<li class="">
 							<a href="/SendEmailForGuest" class="editContent" style="outline: none; cursor: inherit;">Contact Us</a>
 						</li>
@@ -111,9 +109,7 @@
 			<div class="bottom-grid1">
 				<div class="links">
 					<ul class="links-unordered-list">
-						<li class="">
-							<a href="{{ route('about') }}" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
-						</li>
+						
 						<li class="">
 							<a href="#" class="editContent" style="outline: none; cursor: inherit;">Privacy Policy</a>
 						</li>
@@ -123,8 +119,8 @@
 					</ul>
 				</div>
 				<div class="copyright">
-					<p>© 2019 Key. All rights reserved | Design by
-						<a href="http://w3layouts.com">W3layouts</a>
+					<p>© 2020 Key. All rights reserved | Design by
+						<a >SEU Team</a>
 					</p>
 				</div>
 			</div>

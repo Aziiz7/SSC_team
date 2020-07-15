@@ -341,7 +341,7 @@ http://www.templatemo.com/preview/templatemo_421_raleway
 		</div>
 		<div class="row">
 			<div class="col-md-12 copyright">
-				<p>Copyright &copy; 2084 <a href="https://www.seu.edu.sa/">SEU</a></p>
+				<p>Copyright &copy; 2020 <a href="https://www.seu.edu.sa/">SEU</a></p>
 			</div>
 		</div>
 	</footer>

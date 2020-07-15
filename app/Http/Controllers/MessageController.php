@@ -33,7 +33,7 @@ class MessageController extends Controller
         
         ///// Redirect
         
-        return redirect('/dashboard')->with('success','Message has beEn sent ');
+        return redirect('/dashboard')->with('success','Message has been sent ');
         }
     
 

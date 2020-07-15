@@ -11,7 +11,7 @@
 
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
 
-	<title>Raleway - Creative Animated Template</title>
+	<title>SSC</title>
 
 	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -51,8 +51,12 @@ http://www.templatemo.com/preview/templatemo_421_raleway
 			<div class="row">
 				<div class="col-md-3">
 					<div class="site-branding">
-						<a href="{{url('/home')}}"><h1><span class="blue">Raleway</span></h1></a>
+
+					
+						<a href="{{url('/home')}}"><h1><span class="blue">SSC</span></h1></a>
 					</div>
+					
+					
 				</div>
 				<a href="#" class="toggle-nav hidden-md hidden-lg">
 					<i class="fa fa-bars"></i>
@@ -97,10 +101,17 @@ http://www.templatemo.com/preview/templatemo_421_raleway
 						</ul>
 					</nav>
 				</div>
+			
 			</div>
+		
 		</div>
+	
 	</header>
-
+	<div class="container" >
+	<div class ="col-mid-12 col-lg-12 " >
+		@include('inc.errmessages')
+		  </div>
+	</div>
 	@yield('content')
 
     <footer class="site-footer container text-center">
@@ -117,7 +128,7 @@ http://www.templatemo.com/preview/templatemo_421_raleway
 		</div>
 		<div class="row">
 			<div class="col-md-12 copyright">
-				<p>Copyright &copy; 2084 <a href="https://www.seu.edu.sa/">SEU</a></p>
+				<p>Copyright &copy; 2020 <a href="https://www.seu.edu.sa/">SEU</a></p>
 			</div>
 		</div>
 	</footer>

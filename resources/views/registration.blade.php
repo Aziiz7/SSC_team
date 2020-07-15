@@ -42,9 +42,7 @@
 						<li class="">
 							<a href="/" class="editContent" style="outline: none; cursor: inherit;">Login</a>
 						</li>
-						<li class="">
-							<a href="/about" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
-						</li>
+					
 						<li class="">
 							<a href="/SendEmailForGuest" class="editContent" style="outline: none; cursor: inherit;">Contact Us</a>
 						</li>
@@ -89,7 +87,7 @@
 							</div>
 						     @error('name')
                              <span class="invalid-feedback" role="alert">
-                             <strong>{{ $message }}</strong>
+                         
                              </span>
                              @enderror
 						</div>
@@ -102,7 +100,7 @@
 							</div>
 						     @error('email')
                              <span class="invalid-feedback" role="alert">
-                             <strong>{{ $message }}</strong>
+                           
                              </span>
                              @enderror 
 					    </div>
@@ -115,7 +113,7 @@
 							</div>
 						     @error('password')
                              <span class="invalid-feedback" role="alert">
-                             <strong>{{ $message }}</strong>
+                        
                              </span>
                              @enderror
 					    </div>
@@ -128,62 +126,11 @@
 							</div>
 						     @error('password')
                              <span class="invalid-feedback" role="alert">
-                             <strong>{{ $message }}</strong>
+                          
                              </span>
                              @enderror
 					    </div>
-						<!--<div class="field-group editContent">
-							<div class="icon-field">
-								<span class="fa fa-user" aria-hidden="true" style="outline: none; cursor: inherit;"></span>
-							</div>
-							<div class="wthree-field">
-								<input name="Univarsity" id="text1" type="Univarsity" value="" placeholder="Your Univarsity" @error('Univarsity') is-invalid @enderror" name="Univarsity" value="{{ old('Univarsity') }}" required autocomplete="Univarsity" />
-							</div>
-						     @error('Univarsity')
-                             <span class="invalid-feedback" role="alert">
-                             <strong>{{ $message }}</strong>
-                             </span>
-                             @enderror
-					    </div>
-						<div class="field-group editContent">
-							<div class="icon-field">
-								<span class="fa fa-user" aria-hidden="true" style="outline: none; cursor: inherit;"></span>
-							</div>
-							<div class="wthree-field">
-								<input name="univarsityemail" id="text1" type="univarsityemail" value="" placeholder="Your Univarsity Email" @error('univarsityemail') is-invalid @enderror" name="univarsityemail" value="{{ old('univarsityemail') }}" required autocomplete="univarsityemail" />
-							</div>
-						     @error('univarsityemail')
-                             <span class="invalid-feedback" role="alert">
-                             <strong>{{ $message }}</strong>
-                             </span>
-                             @enderror
-					    </div>
-						<div class="field-group editContent">
-							<div class="icon-field">
-								<span class="fa fa-user" aria-hidden="true" style="outline: none; cursor: inherit;"></span>
-							</div>
-							<div class="wthree-field">
-								<input name="grade" id="grade" type="numeric" value="" placeholder="Your Grade" @error('grade') is-invalid @enderror" name="grade" value="{{ old('grade') }}" required autocomplete="grade" />
-							</div>
-						     @error('grade')
-                             <span class="invalid-feedback" role="alert">
-                             <strong>{{ $message }}</strong>
-                             </span>
-                             @enderror
-					    </div>
-						<div class="field-group editContent">
-							<div class="icon-field">
-								<span class="fa fa-user" aria-hidden="true" style="outline: none; cursor: inherit;"></span>
-							</div>
-							<div class="wthree-field">
-								<input name="semster" id="semster" type="text1" value="" placeholder="Your Semster" @error('semster') is-invalid @enderror" name="semster" value="{{ old('semster') }}" required autocomplete="semster" />
-							</div>
-						     @error('semster')
-                             <span class="invalid-feedback" role="alert">
-                             <strong>{{ $message }}</strong>
-                             </span>
-                             @enderror
-					    </div> -->
+					
 
 						<div class="wthree-field">
 							<button type="submit" name="signup" class="btn" style="outline: none; cursor: inherit;">Sign Up</button>
@@ -199,9 +146,8 @@
 			<div class="bottom-grid1">
 				<div class="links">
 					<ul class="links-unordered-list">
-						<li class="">
-							<a href="#" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
-						</li>
+		
+					
 						<li class="">
 							<a href="#" class="editContent" style="outline: none; cursor: inherit;">Privacy Policy</a>
 						</li>
@@ -211,8 +157,8 @@
 					</ul>
 				</div>
 				<div class="copyright">
-					<p>© 2019 Key. All rights reserved | Design by
-						<a href="http://w3layouts.com">W3layouts</a>
+					<p>© 2020 Key. All rights reserved | Design by
+						<a >SEU Team</a>
 					</p>
 				</div>
 			</div>
