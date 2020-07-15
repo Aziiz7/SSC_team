@@ -11,7 +11,7 @@
 
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
 
-	<title>SSC</title>
+	<title>SCS</title>
 
 	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -53,7 +53,7 @@ http://www.templatemo.com/preview/templatemo_421_raleway
 					<div class="site-branding">
 
 					
-						<a href="{{url('/home')}}"><h1><span class="blue">SSC</span></h1></a>
+						<a href="{{url('/home')}}"><h1><span class="blue">SCS</span></h1></a>
 					</div>
 					
 					

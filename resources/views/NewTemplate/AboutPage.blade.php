@@ -34,8 +34,10 @@
 									<img src="{{ asset('NewTemplate') }}/img/14.jpg" alt="">
 								</figure>
 								<div class="offer-content text-center">
-									<h4>HAPPY WORKING WITH US</h4>
-									<p>Sed sagittis nunc vel tellus ultricies auctor. Class aptent taciti sociosqu ad litora torquent per conubia , per inceptos himenaeos. Integer eleifend tellu.</p>
+									<h4> Programming language , frameworks and libraies  </h4>
+									<p> PHP, HTML, CSS and Ajax </p>
+							
+										<p> Laravel, Bootstrab </p>
 									<span class="offer-left"><i></i></span>
 									<span class="offer-right"><i></i></span>
 								</div>
@@ -47,8 +49,8 @@
 									<img src="{{ asset('NewTemplate') }}/img/10.png" alt="">
 								</figure>
 								<div class="offer-content text-center">
-									<h4>OUR COMPANY BACKGROUND</h4>
-									<p>Sed sagittis nunc vel tellus ultricies auctor. Class aptent taciti sociosqu ad litora torquent per conubia , per inceptos himenaeos. Integer eleifend tellu.</p>
+									<h4>Documnation</h4>
+									<p>Contain on the Diagrams thats helps us to develop this system Please Click here <a class="blue" href="Documnation"  >Documnation</a></p>
 									<span class="offer-left"><i></i></span>
 									<span class="offer-right"><i></i></span>
 								</div>
