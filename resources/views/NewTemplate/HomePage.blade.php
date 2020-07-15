@@ -4,7 +4,7 @@
 
 		<div id="menu-1" class="homepage home-section container">
 			<div class="home-intro text-center">
-				<h2 class="welcome-title animated fadeInLeft">Introduction</h2>
+				<h1 class="welcome-title animated fadeInLeft">Introduction</h1>
 				<p class="animated fadeInRight">Raleway HTML5 template is provided by <span class="blue">template</span><span class="green">mo</span>. Credit goes to <a href="http://unsplash.com">Unsplash</a> for photos. Feel free to modify and use this layout for any personal or commercial website.</p>
 				<ul class="list-icons animated fadeInUp">
 					<li><i class="icon-trophy"></i></li>

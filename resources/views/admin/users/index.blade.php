@@ -31,18 +31,13 @@
                     <td>
                     <label class="badge badge-success">{{ implode(',', $user->roles()->get()->pluck('name')->toArray()) }}</label>
                     </td>
+                    
                     <td>
                       @can('manage-users')
                     <!--<a href="{{ route('admin.users.update', $user->id) }}"><button class="btn btn-primary btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Add"><i class="fa fa-table float-left"></i></button></a>-->
                     <a href="{{ route('admin.users.edit', $user->id) }}"><button class=" btn btn-primary btn-sm rounded-0 " type="button" data-toggle="tooltip" data-placement="top" title="Edit" style="float: left"><i class="fa fa-edit "></i></button></a>
                       @endcan
-                      @can('delete-users')
-                    <form action="{{ route('admin.users.destroy', $user) }}" method="POST" style="float: left">
-                       @csrf
-                       {{ method_field('DELETE') }}
-                       <button class="btn btn-danger btn-sm rounded-0 " type="submit" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash "></i></button></a>
-                    </form>
-                      @endcan
+                    
                     </td>   
                 </tr>
             @endforeach

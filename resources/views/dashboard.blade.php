@@ -32,7 +32,7 @@
           <td >{{$message->title}}</td>
           <td>
                
-<a href ="#" class="show-modal button btn btn-primary btn-speces"  data-title="{{$message->title}}" data-id="{{$message->id}}" data-message="{{$message->message}}">
+<a href ="#" class="show-modal button btn btn-primary btn-speces"  data-title="{{$message->title}}" data-id="{{$message->name}}" data-message="{{$message->message}}">
   <i class="far fa-eye" ></i>
 </a>
     

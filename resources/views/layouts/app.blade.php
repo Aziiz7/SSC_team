@@ -66,7 +66,7 @@
   $('#showmsg').modal('show');
   $('#i').text($(this).data('id'));
   $('#ti').text($(this).data('title'));
-  $('#by').text($(this).data('email'));
+  $('#by').text($(this).data('message'));
   $('.modal-title').text($(this).data('title'));
  
   });

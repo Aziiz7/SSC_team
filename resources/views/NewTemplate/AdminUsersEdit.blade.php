@@ -3,7 +3,9 @@
     @section('content')
 
          <div class="container ">
-         <h1>Edit user {{ $user->name }}</h1></br></br>
+         <div class="home-intro text-center">
+          <h1 class="welcome-title animated fadeInLeft"><span class="blue">Edit user {{ $user->name }}</span></h1>
+        </div> 
           <div class="row">
              <div class="col">
              <table class="table table-bordered table-align">
