@@ -62,7 +62,7 @@
                                   @enderror
 								</fieldset>
 								<fieldset class="col-md-12">
-								    <button type="submit" class="btn btn-primary">
+								    <button type="Submit" class="btn btn-primary">
                                        Send Email
                                     </button>
 								</fieldset>

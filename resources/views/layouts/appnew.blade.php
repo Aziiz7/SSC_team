@@ -11,7 +11,8 @@
 
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
 
-	<title>MySSC</title>
+	<title>SCS</title>
+	
 	<link href='https://css.gg/globe.css' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -105,10 +106,17 @@ h1 {
 						</ul>
 					</nav>
 				</div>
+			
 			</div>
+		
 		</div>
+	
 	</header>
-
+	<div class="container" >
+	<div class ="col-mid-12 col-lg-12 " >
+		@include('inc.errmessages')
+		  </div>
+	</div>
 	@yield('content')
 
     <footer class="site-footer container text-center">
@@ -125,7 +133,7 @@ h1 {
 		</div>
 		<div class="row">
 			<div class="col-md-12 copyright">
-				<p>Copyright &copy; 2084 <a href="https://www.seu.edu.sa/">SEU</a></p>
+				<p>Copyright &copy; 2020 <a href="https://www.seu.edu.sa/">SEU</a></p>
 			</div>
 		</div>
 	</footer>

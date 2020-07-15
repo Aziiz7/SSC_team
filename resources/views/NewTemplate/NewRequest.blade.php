@@ -51,7 +51,7 @@
 
 <div>
 <button type="submit" class="btn btn-primary">
-                       submit
+                       Submit
                     </button>
 </div> </br></br>
 

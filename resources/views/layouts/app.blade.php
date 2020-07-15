@@ -37,7 +37,7 @@
   
 </head>
 <body>
-    <div id="page" class="page">
+ 
     @include('inc.navbar')
 <div class="container">
 
