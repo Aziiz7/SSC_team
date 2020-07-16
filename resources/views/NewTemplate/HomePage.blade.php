@@ -4,11 +4,12 @@
 
 		<div id="menu-1" class="homepage home-section container">
 			<div class="home-intro text-center">
-				<h2 class="welcome-title animated fadeInLeft">Introduction</h2>
+				<h1 class="welcome-title animated fadeInLeft"><span class="blue">Introduction</span></h1>
 				<p class="animated fadeInRight">Students Commnucation System is a website that developed by SEU Students which allow the students to commnuace with the univarsity and it's could be a Commnucation channel between SEU and The univarsity that the student study in .</p>
 				<ul class="list-icons animated fadeInUp">
 					<li><i class="icon-trophy"></i></li>
 					<li><i class="icon-badge"></i></li>
+					<li><i class="gg-code-slash"></i></li>
 					<li><i class="icon-magic-wand"></i></li>
 					<li><i class="icon-screen-desktop"></i></li>
 				</ul>

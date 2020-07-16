@@ -19,6 +19,7 @@ Route::get('/home','HomeController@index')->name('home');
 Route::get('/about','PagesController@getAbout')->name('about');
 //Route::get('/dashboard','PagesController@getDashboard');
 Route::get('/newrequest','PagesController@getNewrequest');
+Route::get('/documnation','PagesController@getDocumnation');
 Route::get('/dashboard','MessageController@getMessages')->name('HOME');
 Route::post('/newrequest/submit','MessageController@submit');
 Route::post('/newuser/submit','UserController@submit');

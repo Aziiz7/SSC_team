@@ -29,6 +29,9 @@ class PagesController extends Controller
     public function getSendEmail(){
         return view('NewTemplate.contactusPage');
     }
+    public function getDocumnation(){
+        return view('NewTemplate.DocumnationPage');
+    }
     public function getSendEmailForGuest(){
         return view('SendEmailForGuest');
     }

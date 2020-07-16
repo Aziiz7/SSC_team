@@ -12,9 +12,16 @@
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
 
 	<title>SCS</title>
-	
+
+            <!--icones-->
+	<link href='https://css.gg/website.css' rel='stylesheet'>
+	<link href='https://css.gg/pen.css' rel='stylesheet'>
+	<link href='https://css.gg/template.css' rel='stylesheet'>
+	<link href='https://css.gg/code-slash.css' rel='stylesheet'>
 	<link href='https://css.gg/globe.css' rel='stylesheet'>
-	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+	
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -49,7 +56,7 @@ http://www.templatemo.com/preview/templatemo_421_raleway
 
   <style>
 h1 {
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Satisfy', cursive;
   font-size: 40px;
 }
 </style>
@@ -60,7 +67,7 @@ h1 {
 			<div class="row">
 				<div class="col-md-3">
 					<div class="site-branding">
-						<a href="{{url('/home')}}"><h1><span class="blue"><i class="gg-globe"></i>SCS</span></h1></a>
+						<a href="#"><h1><span class="blue"><i class="gg-globe"></i>SCS</span></h1></a>
 					</div>
 				</div>
 				<a href="#" class="toggle-nav hidden-md hidden-lg">
@@ -69,6 +76,7 @@ h1 {
 				<div class="col-md-8">
 					<nav id="nav" class="main-navigation hidden-xs hidden-sm">
 						<ul class="main-menu">
+						@if (Auth::user())
 						<li class="nav-item dropdown"><a href="{{ route('home') }}">Home</a></li>
 							<li><a href="{{ route('about') }}">About Us</a></li>
 							<li><a href="{{ url('dashboard') }}">Dashboard</a></li>
@@ -104,6 +112,13 @@ h1 {
                                  </div>
 							</li>
 						</ul>
+						@else
+						@guest
+							<li><a href="{{ route('about') }}">About Us</a></li>
+							<li><a href="{{ url('SendEmail') }}">Contact Us</a></li>
+							</ul>
+						@endguest
+						@endif
 					</nav>
 				</div>
 			

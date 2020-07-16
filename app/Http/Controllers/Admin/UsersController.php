@@ -64,7 +64,7 @@ class UsersController extends Controller
         $user->semster = $request->semster;
         
         if($user->save()){
-            $request->session()->flash('success', $user->name. ' has been ubdated');
+            $request->session()->flash('success', $user->name. ' has been updated');
         }else{
             $request->session()->flash('error', 'There was an error ubdating the user');
         }

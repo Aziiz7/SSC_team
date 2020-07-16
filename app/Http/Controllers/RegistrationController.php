@@ -31,6 +31,6 @@ class RegistrationController extends Controller
 
         auth()->login($user);
         
-        return redirect()->to('/dashboard')->withSuccess('Great! You have Successfully Registration');
+        return redirect()->to('/home')->withSuccess('Great! You have Successfully Registration');
     }
 }

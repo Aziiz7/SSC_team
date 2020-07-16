@@ -45,7 +45,11 @@
 						</li>
 					
 						<li class="">
-							<a href="/SendEmailForGuest" class="editContent" style="outline: none; cursor: inherit;">Contact Us</a>
+							<a href="{{ route('about') }}" class="editContent" style="outline: none; cursor: inherit;">About Us</a>
+						</li>
+					
+						<li class="">
+							<a href="{{ url('SendEmail') }}" class="editContent" style="outline: none; cursor: inherit;">Contact Us</a>
 						</li>
 					</ul>
 				</div>

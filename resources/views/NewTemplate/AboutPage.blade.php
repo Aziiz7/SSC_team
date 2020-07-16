@@ -34,7 +34,7 @@
 									<img src="{{ asset('NewTemplate') }}/img/14.jpg" alt="">
 								</figure>
 								<div class="offer-content text-center">
-									<h4> Programming language , frameworks and libraies  </h4>
+									<h4> Programming language, frameworks and libraies</i></h4>
 									<p> PHP, HTML, CSS and Ajax </p>
 							
 										<p> Laravel, Bootstrab </p>
@@ -50,7 +50,7 @@
 								</figure>
 								<div class="offer-content text-center">
 									<h4>Documnation</h4>
-									<p>Contain on the Diagrams thats helps us to develop this system Please Click here <a class="blue" href="Documnation"  >Documnation</a></p>
+									<p>Contain on the Diagrams thats helps us to develop this system Please Click here <a href='/documnation' class="pink-button">Documnation</a></p>
 									<span class="offer-left"><i></i></span>
 									<span class="offer-right"><i></i></span>
 								</div>

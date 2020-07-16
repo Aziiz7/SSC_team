@@ -6,8 +6,11 @@
         <div class="container" text="center">
 
         <div class="home-intro text-center">
-          <h1 class="welcome-title animated fadeInLeft"><span class="blue">users</span></h1>
-        </div> 
+          <h1 class="welcome-title animated fadeInLeft"><span class="blue">users</span></h1></br>
+          <div class="sidebar">
+           <img src="https://image.flaticon.com/icons/svg/78/78948.svg" width="300" height="175" postion="center">
+         </div>
+         </div> 
           <div class="row">
              <div class="col">
              <table class="table table-bordered table-align">
